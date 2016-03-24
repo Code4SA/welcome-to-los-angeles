@@ -2321,7 +2321,7 @@ Based on information from the 2015 report by the Research Alliance for Disaster 
 
           function resized() {
             fixHeight = innerWidth / fixRatio;
-            fixTop = Math.round((innerHeight - fixHeight) / 2);
+            fixTop = "0" //Math.round((innerHeight - fixHeight) / 2);
             fadeTop = Math.max(200, fixTop);
             fadeBottom = Math.min(innerHeight - 200, fixTop + fixHeight);
             d3.select(".video-sequence:first-child").style("margin-top", fixTop + "px");
